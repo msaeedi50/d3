@@ -3,7 +3,7 @@ import {readFileSync} from "fs";
 import {resolve, dirname} from "path";
 import {fileURLToPath} from "url";
 import * as d3 from "../src/index.js";
-
+import * as d3 from "d3";
 const packagePath = resolve(dirname(fileURLToPath(import.meta.url)), "../package.json");
 const packageData = JSON.parse(readFileSync(packagePath));
 
